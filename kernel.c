@@ -1,12 +1,3 @@
-struct IDT_entry
-{
-    unsigned short offset_lowerbits;
-    unsigned short selector;
-    unsigned char zero;
-    unsigned char type_attr;
-    unsigned short offset_higherbits;
-};
-
 void kmain(void)
 {
     // Set the video memory address for text mode (at 0xB8000 for x86 VGA text mode)
